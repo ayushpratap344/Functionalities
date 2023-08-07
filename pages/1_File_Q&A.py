@@ -5,10 +5,9 @@ import io
 from PyPDF2 import PdfReader
 from PIL import Image
 
-st.title("File Q&A AI Assistant")
+st.title("File based Q&A ")
 st.write(
-    "This app allows you to upload a CSV or PDF file, or enter text and ask questions related to the content. The app uses OpenAI's ChatGPT model to assist you in answering your questions about the uploaded content, which is streamed back in real time similar to the ChatGPT interface.")
-
+    "This app allows you to upload a file, or enter text and ask questions related to the content.")
 messages = [
     {"role": "system",
      "content": "You are a professional Question and Answer AI Assistant helping with information in regards to a csv, pdf, and text input file."},
